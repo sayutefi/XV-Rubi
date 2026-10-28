@@ -1,3 +1,13 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Te invito a celebrar mis XV años · Andrea Rubí · Sábado 19 de diciembre 2026">
+<meta property="og:title" content="XV Años de Andrea Rubí">
+<meta property="og:description" content="Sábado 19 de diciembre · 2:00 pm · Las Pichanchas Mirador">
+<meta name="theme-color" content="#f2a7a9">
+<style>[hidden]{display:none!important}img{max-width:100%}body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 <title>XV Años de Andrea Rubí</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -395,6 +405,9 @@ h2{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:30px
   .parent{font-size:30px}
 }
 </style>
+</head>
+<body>
+
 
 <!-- Sobre de entrada -->
 <div class="intro" id="intro" role="button" tabindex="0" aria-label="Abrir la invitación">
@@ -615,7 +628,7 @@ const Music=(function(){
 })();
 
 /* ---------- Pases desde el enlace: #familia-lopez-perez-4 ---------- */
-const INVITE_URL="https://claude.ai/artifact/CkPkA9rj1PVpmgJfvVWAHK";
+const INVITE_URL=(/^https?:$/.test(location.protocol)&&!/claude|anthropic/i.test(location.hostname))?location.href.split('#')[0]:"https://claude.ai/artifact/CkPkA9rj1PVpmgJfvVWAHK";
 const slug=t=>t.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
 const Guest=(function(){
   const m=decodeURIComponent(location.hash||'').match(/^#(?:([a-z0-9-]+?)-)?(\d{1,2})$/i);
@@ -806,3 +819,6 @@ if(Guest&&Guest.name){const el=document.getElementById('intro-for');el.textConte
   size();addEventListener('resize',size);draw(0);
 })();
 </script>
+
+</body>
+</html>
